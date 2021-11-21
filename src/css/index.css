@@ -1,0 +1,168 @@
+/* Deve-se ter uma tabela, uma lista ordenada e uma não ordenada todos com ao menos uma definição de CSS seja lá  o que isso significar */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: 'Oswald', sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+
+.primeiroElemento {
+    margin-top: 100px;
+    margin-bottom: 0%;
+    padding: 5px;
+}
+
+.destaque { /*Pra parte que demanda destaque especial */
+    margin: 20px;
+    background-color: aqua;
+}
+
+h2 {
+    text-align: center;
+    font-size: 45px;
+    margin-right: 10px;
+    margin-top: 0%;
+    line-height: 10%;
+    padding: 7px;
+}
+
+h3 {
+    margin-top: 0px;
+    margin-bottom: 35px;
+    text-align: left;
+    text-justify: inter-word;
+    padding: 6px;
+}
+
+.cabecalho {
+    background: lightgray; 
+    border-bottom: solid 5px #4faddb;
+    height: 80px;
+    box-sizing: content-box;
+    /* overflow: hidden; */
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+
+.footer {
+    background: lightgray; 
+    border-top: solid 5px #4faddb;
+    height: 100px;
+    box-sizing: content-box;
+    bottom: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    display: flex;
+    justify-content: right;
+}
+
+.logo {
+    display: inline-block;
+    height: 80px;
+    padding: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo a {
+    text-align: justify;
+    padding: 14px 16px;
+    display: inline-block;
+}
+
+.logo a img{
+    margin: 0px;
+}
+
+.menu {
+    display: inline-block;
+    vertical-align: top;
+    height: 80px;
+    padding-top: 0px;
+    padding-right: 0px;
+    position: absolute;
+}
+
+.menu ul {
+    margin: 0;
+    margin-left: 20px;
+    padding: 14px 16px;
+    display: inline-block;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 35px;
+    font-size: 30px;
+    
+}
+
+.menu li a {
+    color: rgb(149, 0, 255);
+    padding: 0px 8px;
+}
+
+.menu a:hover,
+.menu a.selected {
+    background-color: #4faddb;
+    color: #000; 
+    border-radius: 10px;
+}
+
+#contatos {
+    border-radius: 30px;
+    padding: 0px 25px;
+    margin: 10px;
+    margin-right: 0px;
+    background: rgb(239, 211, 127);
+    color: rgb(149, 0, 255);
+}
+
+#contatos:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+
+#lastLi {
+    margin-right: 0;
+    margin-left: 70px;
+}
+
+#myBtn {
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgb(239, 211, 127); /* Set a background color */
+    color:  rgb(149, 0, 255); /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 10px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 34px; /* Increase font size */
+    margin-top: 20px;
+    margin-right: 10px;
+    width: 240px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+  
+.marginOn {
+    margin: 20px;
+}
+
+#imagemViagem {
+    height: 100%;
+    width: 50%;
+    margin-left: 25%;
+}
+
