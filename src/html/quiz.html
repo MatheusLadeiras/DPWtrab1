@@ -10,10 +10,7 @@
     <script src="../js/include-html.js"></script>
     <script src="../js/index.js"></script>
 </head>
-<!--O gabarito será feito em formato de tabela, se possível vai aparecer também as respostas colocadas -->
-<!-- Quando a questão certa for selecionada, boolean = 1, esses 1 podem ser usados pra aparecer depois quais as questões foram acertadas-->
-<!-- Deixar as respostas como hidden até que seja selecionado o botão de mostrar respostas-->
-<!-- Ao apertar o botão, fazer com que surja um padding verde nas questões corretas -->
+
 <body>
     <div data-include="./menu.html"></div>
      <h1 class="primeiroElemento" >Você é capaz de responder essas perguntas da cidade mais famosa Flórida?</h1>
@@ -111,113 +108,106 @@
      </ol>
      <div id="warning">Atenção: uma vez que você responda, seu resultado será salvo.</div>
         <div class="wrapper">
-            <button class="submit btn" onclick="return EntregarRespostas();" type="submit" id="submit1">Responder</button>
-            <!--O botão tem que desaparecer depois de ser apertado, aparecer a tabela, o número de acertos e se possível travar os inputs, mas esse não é tão importante se 
-                as respostas corretas estiverem marcadas, por último o botão tem que executar um scrowDown pra mostrar as respostas-->
-                <!-- Bloquear o botão até que todas as respostas sejam colocadas -->
+            <button class="submit btn" onclick="return EntregarRespostas();" type="submit" id="submit1" >Responder</button>
         </div>
      
-     <h1 id="resultado"></h1>
+     <h4 id="resultado"></h4>
 
-     <table> <!-- trocar o x por algo que preencha mais o espaço nem que seja pintar de uma cor diferente-->
-        <caption>Respostas:</caption>
-         <thead>
-            <tr>
-                <th></th>
-                <th id="Q1">Questão 1</th>
-                <th id="Q2">Questão 2</th>
-                <th id="Q3">Questão 3</th>
-                <th id="Q4">Questão 4</th>
-                <th id="Q5">Questão 5</th>
-                <th id="Q6">Questão 6</th>
-                <th id="Q7">Questão 7</th>
-                <th id="Q8">Questão 8</th>
-                <th id="Q9">Questão 9</th>
-                <th id="Q10">Questão 10</th>
-            </tr>
-         </thead>
-         <tbody>
-            <tr id="row1">
-                <td>A)</td>
-                <td id="1coluna1"></td>
-                <td id="1coluna2"></td>
-                <td id="1coluna3"><img src="../imagens/check.jpg" alt="check" height="30px"></td>
-                <td id="1coluna4"></td>
-                <td id="1coluna5"></td>
-                <td id="1coluna6"><img src="../imagens/check.jpg" alt="check" height="30px"></td>
-                <td id="1coluna7"></td>
-                <td id="1coluna8"></td>
-                <td id="1coluna9"></td>
-                <td id="1coluna10" class="last"></td>
-            </tr>
-            <tr id="row2">
-                <td>B)</td>
-                <td id="2coluna1"></td>
-                <td id="2coluna2"></td>
-                <td id="2coluna3"></td>
-                <td id="2coluna4"><img src="../imagens/check.jpg" alt="check" height="30px"></td>
-                <td id="2coluna5"></td>
-                <td id="2coluna6"></td>
-                <td id="2coluna7"></td>
-                <td id="2coluna8"></td>
-                <td id="2coluna9"></td>
-                <td id="2coluna10" class="last"><img src="../imagens/check.jpg" alt="check" height="30px"></td>
-            </tr>
-            <tr id="row3">
-                <td>C)</td>
-                <td id="3coluna1"><img src="../imagens/check.jpg" alt="check" height="30px"></td>
-                <td id="3coluna2"></td>
-                <td id="3coluna3"></td>
-                <td id="3coluna4"></td>
-                <td id="3coluna5"><img src="../imagens/check.jpg" alt="check" height="30px"></td>
-                <td id="3coluna6"></td>
-                <td id="3coluna7"></td>
-                <td id="3coluna8"></td>
-                <td id="3coluna9"><img src="../imagens/check.jpg" alt="check" height="30px"></td>
-                <td id="3coluna10" class="last"></td>
-            </tr>
-            <tr id="row4">
-                <td>D)</td>
-                <td id="4coluna1"></td>
-                <td id="4coluna2"><img src="../imagens/check.jpg" alt="check" height="30px"></td>
-                <td id="4coluna3"></td>
-                <td id="4coluna4"></td>
-                <td id="4coluna5"></td>
-                <td id="4coluna6"></td>
-                <td id="4coluna7"><img src="../imagens/check.jpg" alt="check" height="30px"></td>
-                <td id="4coluna8"><img src="../imagens/check.jpg" alt="check" height="30px"></td>
-                <td id="4coluna9"></td>
-                <td id="4coluna10" class="last"></td>
-            </tr>
-         </tbody> 
-         <tfoot>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>   
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>   
-                <td></td>    
-            </tr>
-        </tfoot>  
-     </table>
+     <div id="tabelaResultado" hidden="true">
+        <table> <!-- trocar o x por algo que preencha mais o espaço nem que seja pintar de uma cor diferente-->
+            <caption>Respostas:</caption>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th id="Q1">Questão 1</th>
+                    <th id="Q2">Questão 2</th>
+                    <th id="Q3">Questão 3</th>
+                    <th id="Q4">Questão 4</th>
+                    <th id="Q5">Questão 5</th>
+                    <th id="Q6">Questão 6</th>
+                    <th id="Q7">Questão 7</th>
+                    <th id="Q8">Questão 8</th>
+                    <th id="Q9">Questão 9</th>
+                    <th id="Q10">Questão 10</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="row1">
+                    <td>A)</td>
+                    <td id="1coluna1"></td>
+                    <td id="1coluna2"></td>
+                    <td id="1coluna3"><img src="../imagens/check.jpg" alt="check" height="30px"></td>
+                    <td id="1coluna4"></td>
+                    <td id="1coluna5"></td>
+                    <td id="1coluna6"><img src="../imagens/check.jpg" alt="check" height="30px"></td>
+                    <td id="1coluna7"></td>
+                    <td id="1coluna8"></td>
+                    <td id="1coluna9"></td>
+                    <td id="1coluna10" class="last"></td>
+                </tr>
+                <tr id="row2">
+                    <td>B)</td>
+                    <td id="2coluna1"></td>
+                    <td id="2coluna2"></td>
+                    <td id="2coluna3"></td>
+                    <td id="2coluna4"><img src="../imagens/check.jpg" alt="check" height="30px"></td>
+                    <td id="2coluna5"></td>
+                    <td id="2coluna6"></td>
+                    <td id="2coluna7"></td>
+                    <td id="2coluna8"></td>
+                    <td id="2coluna9"></td>
+                    <td id="2coluna10" class="last"><img src="../imagens/check.jpg" alt="check" height="30px"></td>
+                </tr>
+                <tr id="row3">
+                    <td>C)</td>
+                    <td id="3coluna1"><img src="../imagens/check.jpg" alt="check" height="30px"></td>
+                    <td id="3coluna2"></td>
+                    <td id="3coluna3"></td>
+                    <td id="3coluna4"></td>
+                    <td id="3coluna5"><img src="../imagens/check.jpg" alt="check" height="30px"></td>
+                    <td id="3coluna6"></td>
+                    <td id="3coluna7"></td>
+                    <td id="3coluna8"></td>
+                    <td id="3coluna9"><img src="../imagens/check.jpg" alt="check" height="30px"></td>
+                    <td id="3coluna10" class="last"></td>
+                </tr>
+                <tr id="row4">
+                    <td>D)</td>
+                    <td id="4coluna1"></td>
+                    <td id="4coluna2"><img src="../imagens/check.jpg" alt="check" height="30px"></td>
+                    <td id="4coluna3"></td>
+                    <td id="4coluna4"></td>
+                    <td id="4coluna5"></td>
+                    <td id="4coluna6"></td>
+                    <td id="4coluna7"><img src="../imagens/check.jpg" alt="check" height="30px"></td>
+                    <td id="4coluna8"><img src="../imagens/check.jpg" alt="check" height="30px"></td>
+                    <td id="4coluna9"></td>
+                    <td id="4coluna10" class="last"></td>
+                </tr>
+            </tbody> 
+            <tfoot>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>   
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>   
+                    <td></td>    
+                </tr>
+            </tfoot>  
+        </table>
 
-     <h1>Respostas corretas:<img src="../imagens/check.jpg" alt="check" height="30px"> Erros cometidos: <img src="../imagens/redX.jpg" alt="X" height="30px"></h1>
+        <h2>Respostas corretas:<img src="../imagens/check.jpg" alt="check" height="30px"> Erros cometidos: <img src="../imagens/redX.jpg" alt="X" height="30px"></h2>
+    </div>
      <div data-include="../html/backToTop.html"></div>
 </body>
 
 <style>
-    /*.resp {}*/
-
-    /* span {
-        background-color: lightgreen;
-        border-radius: 10px;
-    } */
 
     th span {
         background-color: none;
@@ -240,6 +230,11 @@
 
     h3 {
         margin-bottom: 0;
+    }
+
+    h4 {
+        text-align: center;
+        font-size: 45px;
     }
 
     ol {
@@ -332,34 +327,6 @@
     }
 </style> 
 
-<script>  //Não é ligado ao style o problema, não é resolvido por tirar o index.js nem colocar isso no index.js, não é ligado ao jquery, não está no head o problema, não são os outros scripts
-          // O problema está nessa página pois colocar todo o html faz com que não tenha resposta
-
-          //let button = document.querySelector("button"); funciona, então está sendo lido o que está aqui
-          //button.disabled = false;
-    var q01 = $('input[name=questao1]');
-    var q02 = $('input[name=questao2]');
-    var q03 = $('input[name=questao3]');
-    /*var q04 = $('input[name=questao4]');
-    var q05 = $('input[name=questao5]');
-    var q06 = $('input[name=questao6]');
-    var q07 = $('input[name=questao7]');
-    var q08 = $('input[name=questao8]');
-    var q09 = $('input[name=questao9]');
-    var q10 = $('input[name=questao10]'); */
-
-    validate();
-
-    $("input[type='radio']").change(validate);
-
-    function validate() {
-        if ($(q01).is(':checked') && $(q02).is(':checked') && $(q03).is(':checked')) {
-            $(".btn#submit1").removeAttr("disabled", false);
-        } else {
-            $(".btn#submit1").attr("disabled", true);
-        }
-    }
-</script>
 <script> src="js/jquery-3.6.0.min.js"</script>
 <script> src="js/include-html.min.js"</script>
 
