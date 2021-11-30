@@ -202,11 +202,3 @@ function popupWindow(win, w, h, title, content) {
     myWindow.document.write(title);
     myWindow.document.write(content);
 } 
-/* save do que está funcionando, testar a estilização no outro
-function popupWindow(win, w, h, content) {
-    const y = win.top.outerHeight / 2 + win.top.screenY - ( h / 2);
-    const x = win.top.outerWidth / 2 + win.top.screenX - ( w / 2);
-    var myWindow = window.open("", "MsgWindow", `width=${w}, height=${h}, top=${y}, left=${x}`);
-    myWindow.document.write('<html><head><title>Minha memória!</title><link rel="stylesheet" href="../css/index.css"></head><body>');
-    myWindow.document.write(content);
-} */

@@ -14,7 +14,8 @@
 <body>
     <div data-include="./menu.html"></div>
      <h1 class="primeiroElemento" >Você é capaz de responder essas perguntas da cidade mais famosa Flórida?</h1>
-     <ol> <!-- Ver como fazer com que os botões continuem apertados e que só um possa ser apertado por vez, além disso, achar como travar todos eles após liberarem as respostas-->
+     <div id="quiz">
+     <ol id="perguntas">
          <li>
              <h3>Orlando tem um time de futebol, qual o nome desse time?</h3>
              <ol class="resp">
@@ -25,7 +26,7 @@
             </ol>
          </li><p>
          <li>
-            <h3>Quantos parques temáticos da Dysney estão em Orlando?</h3>
+            <h3>Quantos parques temáticos da Disney estão em Orlando?</h3>
             <ol class="resp">
                 <li><label><input type="radio" class="input" name="questao2" value="errado1"> Nenhum parque </label> </li>
                 <li><label><input type="radio" class="input" name="questao2" value="errado2"> Apenas 1 parque </label> </li>
@@ -34,7 +35,7 @@
             </ol>
         </li><p>
         <li>
-            <h3>Como se referir as pessoas que vivem em orlândo?</h3>
+            <h3>Como se referir as pessoas que vivem em Orlando?</h3>
             <ol class="resp">
                 <li><label><input type="radio" class="input" name="questao3" value="correto"> <span>Orlandoan</span> </label></li>
                 <li><label><input type="radio" class="input" name="questao3" value="errado2"> Seminoles </label></li>
@@ -43,70 +44,72 @@
             </ol>
         </li><p>
         <li>
-            <h3>Qual a capital de orlândo?</h3>
+            <h3>Qual o tamanho da cidade de Orlando?</h3>
             <ol class="resp">
-                <li><label><input type="radio" class="input" name="questao4" value="errado1"> Orlandoan </label></li>
-                <li><label><input type="radio" class="input" name="questao4" value="correto"> <span>Orlandoan</span> </label></li>
-                <li><label><input type="radio" class="input" name="questao4" value="errado3"> Orlandês </label></li>
-                <li><label><input type="radio" class="input" name="questao4" value="errado4"> Orlandoinians </label></li>
+                <li><label><input type="radio" class="input" name="questao4" value="errado1"> 380,4 km² </label></li>
+                <li><label><input type="radio" class="input" name="questao4" value="correto"> <span>308,4 km²</span> </label></li>
+                <li><label><input type="radio" class="input" name="questao4" value="errado3"> 30804 km² </label></li>
+                <li><label><input type="radio" class="input" name="questao4" value="errado4"> 3084 km² </label></li>
             </ol>
         </li><p>
         <li>
-            <h3>Qual a capital de orlândo?</h3>
+            <h3>Além de Parques temáticos e turismo como um todo, qual a outra maior especialidade econômica de Orlando ?</h3>
             <ol class="resp">
-                <li><label><input type="radio" class="input" name="questao5" value="errado1"> Orlandoan </label></li>
-                <li><label><input type="radio" class="input" name="questao5" value="errado2"> Seminoles </label></li>
-                <li><label><input type="radio" class="input" name="questao5" value="correto"> <span>Orlandoan</span> </label></li>
-                <li><label><input type="radio" class="input" name="questao5" value="errado4"> Orlandoinians </label></li>
+                <li><label><input type="radio" class="input" name="questao5" value="errado1"> Prestação de serviços </label></li>
+                <li><label><input type="radio" class="input" name="questao5" value="errado2"> Agropecuária </label></li>
+                <li><label><input type="radio" class="input" name="questao5" value="correto"> <span>Setor de tecnologia</span> </label></li>
+                <li><label><input type="radio" class="input" name="questao5" value="errado4"> Industria de base </label></li>
             </ol>
         </li><p>
         <li>
-            <h3>Qual a capital de orlândo?</h3>
+            <h3>Como se chama a esfera símbolo do Epcot Center?</h3>
             <ol class="resp">
-                <li><label><input type="radio" class="input" name="questao6" value="correto"> <span>Orlandoan</span> </label></li>
-                <li><label><input type="radio" class="input" name="questao6" value="errado2"> Seminoles </label></li>
-                <li><label><input type="radio" class="input" name="questao6" value="errado3"> a </label></li>
-                <li><label><input type="radio" class="input" name="questao6" value="errado4"> Orlandoinians </label></li>
+                <li><label><input type="radio" class="input" name="questao6" value="correto"> <span>Spaceship Earth</span> </label></li>
+                <li><label><input type="radio" class="input" name="questao6" value="errado2"> Epcot's Space </label></li>
+                <li><label><input type="radio" class="input" name="questao6" value="errado3"> Earth Mission </label></li>
+                <li><label><input type="radio" class="input" name="questao6" value="errado4"> Epcot's World </label></li>
             </ol>
         </li><p>
         <li>
-            <h3>Qual a capital de orlândo?</h3>
+            <h3>Qual dessas praias é de Orlando?</h3>
             <ol class="resp">
-                <li><label><input type="radio" class="input" name="questao7" value="errado1"> Orlandoan </label></li>
-                <li><label><input type="radio" class="input" name="questao7" value="errado2"> Seminoles </label></li>
-                <li><label><input type="radio" class="input" name="questao7" value="errado3"> a </label></li>
-                <li><label><input type="radio" class="input" name="questao7" value="correto"> <span>Orlandoan</span> </label></li>
+                <li><label><input type="radio" class="input" name="questao7" value="errado1"> Navagio </label></li>
+                <li><label><input type="radio" class="input" name="questao7" value="errado2"> Bondi Beach </label></li>
+                <li><label><input type="radio" class="input" name="questao7" value="errado3"> Praia do Flamengo </label></li>
+                <li><label><input type="radio" class="input" name="questao7" value="correto"> <span>Cocoa Beach</span> </label></li>
             </ol>
         </li><p>
         <li>
-            <h3>Qual a capital de orlândo?</h3>
+            <h3>Qual o nome do vulcão presente na Volcano Bay?</h3>
             <ol class="resp">
-                <li><label><input type="radio" class="input" name="questao8" value="errado1"> Orlandoan </label></li>
-                <li><label><input type="radio" class="input" name="questao8" value="errado2"> Seminoles </label></li>
-                <li><label><input type="radio" class="input" name="questao8" value="errado3"> a </label></li>
-                <li><label><input type="radio" class="input" name="questao8" value="correto"> <span>Orlandoan</span> </label></li>
+                <li><label><input type="radio" class="input" name="questao8" value="errado1"> Andrus </label></li>
+                <li><label><input type="radio" class="input" name="questao8" value="errado2"> Kilauea  </label></li>
+                <li><label><input type="radio" class="input" name="questao8" value="errado3"> Volcan </label></li>
+                <li><label><input type="radio" class="input" name="questao8" value="correto"> <span> Krakatau</span> </label></li>
             </ol>
         </li><p>
         <li>
-            <h3>Qual a capital de orlândo?</h3>
+            <h3>A NASA tem uma instalação próxima de Orlando, qual o seu nome?</h3>
             <ol class="resp">
-                <li><label><input type="radio" class="input" name="questao9" value="errado1"> Orlandoan </label></li>
-                <li><label><input type="radio" class="input" name="questao9" value="errado2"> Seminoles </label></li>
-                <li><label><input type="radio" class="input" name="questao9" value="correto"> <span>Orlandoan</span> </label></li>
-                <li><label><input type="radio" class="input" name="questao9" value="errado4"> Orlandoinians </label></li>
+                <li><label><input type="radio" class="input" name="questao9" value="errado1"> NASA Center </label></li>
+                <li><label><input type="radio" class="input" name="questao9" value="errado2"> Dream Chaser </label></li>
+                <li><label><input type="radio" class="input" name="questao9" value="correto"> <span>Kennedy Space Center</span> </label></li>
+                <li><label><input type="radio" class="input" name="questao9" value="errado4"> Launching Bay </label></li>
             </ol>
         </li><p>
         <li>
-            <h3>Qual a capital de orlândo?</h3>
+            <h3>Qual o parque mais visitado de Orlando?</h3>
             <ol class="resp">
-                <li><label><input type="radio" class="input" name="questao10" value="errado1"> Orlandoan </label></li>
-                <li><label><input type="radio" class="input" name="questao10" value="correto"> <span>Orlandoan</span> </label></li>
-                <li><label><input type="radio" class="input" name="questao10" value="errado3"> a </label></li>
-                <li><label><input type="radio" class="input" name="questao10" value="errado4"> Orlandoinians </label></li>
+                <li><label><input type="radio" class="input" name="questao10" value="errado1"> Sea World </label></li>
+                <li><label><input type="radio" class="input" name="questao10" value="correto"> <span>Magic Kingdom</span> </label></li>
+                <li><label><input type="radio" class="input" name="questao10" value="errado3"> Universal Studios </label></li>
+                <li><label><input type="radio" class="input" name="questao10" value="errado4"> Hollywood Studios </label></li>
             </ol>
         </li><p>
      </ol>
      <div id="warning">Atenção: uma vez que você responda, seu resultado será salvo.</div>
+    </div> <p>
+    
         <div class="wrapper">
             <button class="submit btn" onclick="return EntregarRespostas();" type="submit" id="submit1" >Responder</button>
         </div>
@@ -209,15 +212,20 @@
 
 <style>
 
+    #quiz {
+        text-align: center;
+    }
+
+    #quiz #perguntas {
+        /* background-color: rgb(9, 245, 9); */
+        border-radius: 8px;
+        border: solid black; 
+    }
+
     th span {
         background-color: none;
         border-radius: 10px;
         color: lightgreen;
-    }
-
-    .acerto {
-        background-color: lightgreen;
-        border-radius: 10px;
     }
 
     #mensagemDeResultado {
@@ -251,17 +259,17 @@
         padding: 3px;
     }
 
-    li ol li input:before { /* Pra burlar o inline-block apagar os bullet points*/
+    li ol li input:before { 
         content:"";
         display: list-item;
     }
 
     .wrapper {
         text-align: center;
+        justify-content: center;
     }
 
-    button {
-        text-align:center;
+    button {     
         font-size: 50px;
         font-family: 'Oswald', sans-serif;
         padding: 8px 25px;
@@ -278,10 +286,8 @@
     }
 
     #warning {
-        margin-left: 30px;
         padding: 5px;
         color: red;
-        display:block;
     }
 
     caption {
