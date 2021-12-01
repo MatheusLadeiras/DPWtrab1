@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8"/>
+    <title> Orlando Tour - Nossa Galeria </title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="../js/include-html.js"></script>
+    <script src="../js/index.js"></script>
+</head>
+
+<body>
+    <div id="menu"></div>
+    <div>
+    <h1 class="primeiroElemento destaque">Veja aqui imagens de nossos seguidores e reviva momentos inesquecíveis!</h1>
+    <h3> Nossa galeria não é formada de apenas imagens, mas também de memórias, nas fotos que forem de seu interesse aperte o botão veja as memórias por trás delas!</h3>
+    </div>
+     
+     <div class="imgSet">
+        <div class="imgCard">
+            <img src="../imagens/disney1.jpg" alt="Reabertura Disney" height="200px" >
+            <div class="info">
+                <h4 id="title1">Re-abertura do Magic Kingdom</h4>
+                <p>De: Fulano de Alves Almeida</p>
+                <button onclick="popupWindow(window, 400, 200, `<h5>${document.getElementById('title1').textContent}</h5>`,
+                '<h6>Fazia tempo que não vinha a disney, apesar dela ter marcado minha infância, não pude vir por anos, agora que os parques abriram novamente decidi fazer uma viajem de ultima hora com alguns amigos que não via desde o inicio da pandemia e devo dizer que não aproveitava tanto faz tempo.</h6>')"
+                 class="vejaMais">Veja mais desta memória</button>
+                <span class="data">14/11/20</span>
+            </div>
+        </div>
+        <div class="imgCard">
+            <img src="../imagens/hotel1.jpg" alt="hotel 5 estrelas" height="200px">
+            <div class="info">
+                <h4 id="title2">Meu hotel no Internatial Drive</h4>
+                <p>De: Bruno garcia</p>
+                <button onclick="popupWindow(window, 400, 200, `<h5>${document.getElementById('title2').textContent}</h5>`,
+                    '<h6>Da ultima vez fiquei em um airbnb, a experiencia não foi muito boa pra dizer o mínimo, dessa vez decidi tirar o escorpião da carteira e me hospedei em um hotel 5 estrelas no International Drive, parece que vivi como um rei por alguns dias, não acho que faria de novo pelo preço, mas suponho que valeu a experiência.</h6>')"
+                    class="vejaMais">Veja mais desta memória</button>
+                <span class="data">23/01/21</span>
+            </div>
+        </div>
+        <div class="imgCard">
+            <img src="../imagens/universalWand.jpg" alt="Varinha em Harry Potter World" height="200px" >
+            <div class="info">
+                <h4 id="title3">Meu primeiro feitiço</h4>
+                <p>De: Bianca Lopes Madalena</p>
+                <button onclick="popupWindow(window, 400, 200, `<h5>${document.getElementById('title3').textContent}</h5>`,
+                '<h6>Como uma fã de longa data que cresceu com a série, foi indiscritível passear pelo Beco Diagonal pela primeira vez, é como se estivesse no próprio universo do livro. Essa foto é do meu primeiro feitiço com a minha recém adiquirida varinha!</h6>')"
+                 class="vejaMais">Veja mais desta memória</button>
+                <span class="data">02/10/21</span>
+            </div>
+        </div>
+        <div class="imgCard">
+            <img src="../imagens/droneUniversal.jpg" alt="Foto de drone do Universal Studios" height="200px" >
+            <div class="info">
+                <h4 id="title4">Minha melhor foto</h4>
+                <p>De: Josesvaldo Silva Soares</p>
+                <button onclick="popupWindow(window, 400, 200, `<h5>${document.getElementById('title4').textContent}</h5>`,
+                '<h6>Encontrei essa comunidade a pouco tempo, entretanto já quero deixar uma contribuição. Eu sou um piloto de drones, a maioria dos trabalhos que faço ultimamente são para casamento, todavia, mesmo que faça uns anos que tirei essa foto, eu ainda a considero o meu melhor trabalho por uma grande margem.</h6>')"
+                class="vejaMais">Veja mais desta memória</button>
+                <span class="data">12/07/17</span>
+            </div>
+        </div>
+        <div class="imgCard">
+            <img src="../imagens/disney2.png" alt="Criança com Mickey" height="200px" >
+            <div class="info">
+                <h4 id="title5">Minha filha e seu novo amigo</h4>
+                <p>De: Laura Barbosa </p>
+                <button onclick="popupWindow(window, 400, 200, `<h5>${document.getElementById('title5').textContent}</h5>`,
+                '<h6>Minha filha pulou de alegria enquanto gritava repitidamente Mickey. Eu mesma não esperava tanta comoção por parte dela, mas foi incrível ve-la feliz desse jeito. Consegui pegar essa foto dela dando um beijinho no nariz dele. Eu e meu marido rimos muito, ela até ficou envergonhada depois, mesmo assim ela parecia tão alegre que arrisco dizer que foi a melhor parte da viagem pra ela.</h6>')"
+                class="vejaMais">Veja mais desta memória</button>
+                <span class="data">03/09/19</span>
+            </div>
+        </div>
+        <div class="imgCard">
+            <img src="../imagens/orlandoBeach.jpg" alt="Cocoa Beach" height="200px" >
+            <div class="info">
+                <h4 id="title6">Cada um com a praia que merece</h4>
+                <p>De: Pedro Machado</p>
+                <button onclick="popupWindow(window, 400, 200, `<h5>${document.getElementById('title6').textContent}</h5>`,
+                '<h6>Desde que comecei a morar aqui tenho frequentado a Cocoa Beach. Lá no Rio as praias eram mais animadas, em compensação aqui eu posso nadar sem ter medo de que eu saia com um terceiro braço da agua. Recentemente decidi que vou aprender a surfar, é algo bem popular por aqui e parece divertido, me desejem sorte!</h6>')"
+                class="vejaMais">Veja mais desta memória</button>
+                <span class="data">16/05/19</span>
+            </div>
+        </div>
+     </div>
+
+     <div id="avisoImgs">Caso queira ter uma de suas imagens em nossa galeria, entre em contato pelas nossas redes sociais</div>
+     <div id="footer"></div>
+</body>
+
+<style>
+
+    h1 {
+        text-align: center;
+        margin: 300px;
+        background: rgb(11, 152, 207);
+        list-style: none;
+    }
+
+    h3 {
+        text-align: center;
+    }
+
+    .imgSet {
+        text-align:center;
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+
+    .imgSet .imgCard {
+        display: inline-block;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.476);
+        width: 350px;
+        height: 380px; 
+        margin: 20px; 
+        margin-top: 0px;
+    }
+
+   .imgSet .imgCard:hover{
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.626);
+    }
+
+    .imgSet .imgCard img {
+        margin-top: 10px;
+    }
+
+    .vejaMais {
+        background-color: rgb(163, 31, 31);
+        border:outset;
+        border-color: orange;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        margin-right: 70px;
+        padding: 10px;
+    }
+
+    .vejaMais:hover {
+        border:outset;
+        border-color: black;
+    }
+
+    span {
+        font-size: large;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        background-color: rgb(11, 207, 18);
+        border-radius: 20px;
+        padding: 10px;
+    }
+
+    #avisoImgs {
+        margin-left: 10px;
+        margin-bottom: 5px;
+    }
+
+</style>
+
+<script src="../js/menu.js"></script>
+<script src="../js/footer.js"></script>
+
+</html>

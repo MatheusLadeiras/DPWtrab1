@@ -1,0 +1,187 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: 'Oswald', sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+
+.primeiroElemento {
+    margin-top: 100px;
+    margin-bottom: 0%;
+    padding: 5px;
+}
+
+.destaque { 
+    background-color: rgb(11, 152, 207);
+    border-radius: 10px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 45px;
+    margin-right: 10px;
+    margin-top: 0%;
+    line-height: 10%;
+    padding: 7px;
+}
+
+h3 {
+    margin-top: 0px;
+    margin-bottom: 35px;
+    text-align: left;
+    text-justify: inter-word;
+    padding: 6px;
+}
+
+h5 {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+h6 {
+    text-align:justify;
+    font-size: 15px;
+    margin: 10px;
+}
+
+.cabecalho {
+    background: lightgray; 
+    border-bottom: solid 5px #4faddb;
+    height: 80px;
+    box-sizing: content-box;
+    overflow: hidden;
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+}
+
+.footer {
+    background: lightgray; 
+    border-top: solid 5px #4faddb;
+    height: 100px;
+    box-sizing: content-box;
+    bottom: 0; 
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+
+.logo {
+    display: inline-block;
+    height: 80px;
+    padding: 15px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 30px;
+    color:rgb(38, 10, 104);
+}
+
+a:hover {
+    text-decoration:solid;
+    font-size: 30px;
+    color:rgb(104, 10, 10);
+}
+
+.logo a {
+    text-align: justify;
+    padding: 14px 16px;
+    display: inline-block;
+}
+
+.logo a img{
+    margin: 0px;
+}
+
+.menu {
+    display: inline-block;
+    vertical-align: top;
+    height: 80px;
+    padding-top: 0px;
+    padding-right: 0px;
+    position: absolute;
+}
+
+.menu ul {
+    margin: 0;
+    margin-left: 20px;
+    padding: 14px 16px;
+    display: inline-block;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 35px;
+    font-size: 30px;
+    
+}
+
+.menu li a {
+    color: rgb(149, 0, 255);
+    padding: 0px 8px;
+}
+
+.menu a:hover,
+.menu a.selected {
+    background-color: #4faddb;
+    color: #000; 
+    border-radius: 10px;
+}
+
+#contatos {
+    border-radius: 30px;
+    padding: 0px 25px;
+    margin: 10px;
+    margin-right: 0px;
+    background: rgb(239, 211, 127);
+    color: rgb(149, 0, 255);
+}
+
+#contatos:hover {
+    background-color: #555; 
+  }
+
+#lastLi {
+    margin-right: 0;
+    margin-left: 70px;
+}
+
+#myBtn {
+    border: none; 
+    outline: none; 
+    background-color: rgb(239, 211, 127); 
+    color:  rgb(149, 0, 255); 
+    cursor: pointer; 
+    padding: 10px; 
+    border-radius: 10px; 
+    font-size: 34px; 
+    margin-top: 20px;
+    margin-right: 10px;
+    width: 240px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+#myBtn:hover {
+    background-color: #555; 
+  }
+  
+.marginOn {
+    margin: 20px;
+}
+
+#imagemViagem {
+    height: 100%;
+    width: 50%;
+    margin-left: 25%;
+}

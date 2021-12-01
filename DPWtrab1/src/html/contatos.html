@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8"/>
+    <title>Orlando Tour - Contatos </title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="../js/include-html.js"></script>
+    <script src="../js/index.js"></script>
+</head>
+
+<body>
+    <div id="menu"></div>
+    <h1 class="primeiroElemento">Dúvidas, sugestões e redes sociais:</h1>
+    <div id="contatosExternos">   
+        <div id="redesSociais">
+            <h3  href="#inicio">Entre em contato conosco pelas nossas redes sociais:</h3>
+            <a href="https://twitter.com/OrlandoTour2">Nosso Twitter - twitter.com/OrlandoTour2 </a> <p>
+            <a href="https://www.instagram.com/orlandotour2/">Nosso Instagram - instagram.com/orlandotour2 </a>
+        </div> 
+        <div id="email">
+            <h3>Caso tenho alguma sugestão, entre em contato pelo nosso email: <a href="mailto:forum.orlando.tour@gmail.com?subject=Sugestões">forum.orlando.tour@gmail.com</a></h3> <p>
+        </div>
+    </div>
+        <form onsubmit="myFunction()" id="contatoDireto">
+            Fale diretamente conosco: <p class="small">
+            <textarea></textarea> <p class="small">
+            <input type="submit">
+        </form>
+        <div id="footer"></div>
+</body>
+
+<style>
+
+    h1 {
+        text-align: center;
+        font-size: 50px;
+    }
+
+    #contatosExternos {
+        display: table-row;
+        margin: 10px;
+        width: 100%; 
+    }
+
+    #contatosExternos div {
+        background-color: rgb(239, 211, 127);
+        margin: 10px;
+        width: 600px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 105px;
+        border-radius: 20px;
+        height: 300px;
+    }
+
+    #redesSociais h3{
+        font-size: 30px;
+        margin-top: 10px;
+        margin-left: 5px;
+    }
+
+    #redesSociais a{
+        font-size: 33px;
+        margin-left: 15px;
+    }
+
+    #email h3{
+        margin-top: 20px;
+        text-align: center;
+        font-size: 45px;
+    }
+
+    #email a{
+        text-align: center;
+        font-size: 50px;
+    }
+
+    form {
+        text-align: center;
+        background-color: rgb(149, 0, 255);
+        margin: 10px 450px;
+        border-radius: 20px;
+        margin-top: 25px;
+        font-size: 30px;
+    }
+    
+    textarea {
+        width: 80%;
+        height: 220px;
+        padding: 120px 20px;
+        margin: 0px 0;
+        box-sizing: border-box;
+        padding-top: 20px;
+        overflow:auto;
+        resize: none;
+        margin-top: 10px;
+    }
+
+    input[type=submit] {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        font-size: 20px;
+        padding: 16px 32px;
+        margin: 4px 2px;
+        cursor: pointer;
+        margin-bottom: 15px;
+    }
+
+    .small {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+</style>
+
+<script>
+    function myFunction () {
+        alert("Seu comentário foi submetido, agradecemos pelo feedback!");
+    }
+</script>
+
+<script src="../js/menu.js"></script>
+<script src="../js/footer.js"></script>
+
+</html>
